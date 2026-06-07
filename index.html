@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mthobisi's Barbershop</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#000,#222);
+padding:20px;
+text-align:center;
+border-bottom:3px solid gold;
+}
+
+header h1{
+font-size:40px;
+color:gold;
+}
+
+nav{
+background:#1a1a1a;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c');
+background-size:cover;
+background-position:center;
+}
+
+.hero h2{
+font-size:60px;
+color:gold;
+}
+
+.hero p{
+font-size:22px;
+margin:20px;
+}
+
+.btn{
+background:gold;
+color:black;
+padding:15px 30px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:30px;
+color:gold;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:25px;
+border-radius:15px;
+text-align:center;
+border:1px solid #333;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.prices{
+max-width:600px;
+margin:auto;
+}
+
+.price-item{
+display:flex;
+justify-content:space-between;
+padding:15px;
+border-bottom:1px solid #444;
+}
+
+.contact{
+text-align:center;
+background:#1a1a1a;
+border-radius:15px;
+padding:30px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:40px;
+border-top:2px solid gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>✂️ Mthobisi's Barbershop</h1>
+<p>Fresh Cuts • Sharp Style • Professional Grooming</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#prices">Prices</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Look Fresh Every Day</h2>
+<p>Professional haircuts for men and kids.</p>
+<a href="tel:0729074920" class="btn">Book Now</a>
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Fade Cut</h3>
+<p>Modern fade styles.</p>
+</div>
+
+<div class="card">
+<h3>Beard Trim</h3>
+<p>Clean and professional grooming.</p>
+</div>
+
+<div class="card">
+<h3>Kids Haircuts</h3>
+<p>Fresh styles for young gentlemen.</p>
+</div>
+
+<div class="card">
+<h3>VIP Package</h3>
+<p>Haircut + Beard + Styling.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Haircut Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+
+<img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186">
+
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1">
+
+<img src="https://images.unsplash.com/photo-1585747860715-ebba7e41a44b">
+
+</div>
+
+</section>
+
+<section id="prices">
+
+<h2 class="section-title">Price List</h2>
+
+<div class="prices">
+
+<div class="price-item">
+<span>Haircut</span>
+<span>R ____</span>
+</div>
+
+<div class="price-item">
+<span>Fade Cut</span>
+<span>R ____</span>
+</div>
+
+<div class="price-item">
+<span>Beard Trim</span>
+<span>R ____</span>
+</div>
+
+<div class="price-item">
+<span>Kids Cut</span>
+<span>R ____</span>
+</div>
+
+<div class="price-item">
+<span>VIP Package</span>
+<span>R ____</span>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📞 072 907 4920</p>
+
+<p>📍 Port Shepstone, KwaZulu-Natal</p>
+
+<p>Open Monday - Saturday</p>
+
+<br>
+
+<a href="tel:0729074920" class="btn">
+Call Now
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Mthobisi's Barbershop. All Rights Reserved.</p>
+</footer>
+
+</body>
+  </html>
